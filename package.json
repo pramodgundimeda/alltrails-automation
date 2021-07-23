@@ -1,10 +1,10 @@
 {
   "devDependencies": {
-    "cypress": "^7.7.0"
+    "cypress": "^8.0.0"
   },
   "name": "alltrails-automation",
   "version": "1.0.0",
-  "description": "e2e automation",
+  "description": "cypress e2e automation",
   "main": "index.js",
   "dependencies": {
     "aggregate-error": "^3.1.0",
@@ -101,7 +101,7 @@
     "jsonfile": "^6.1.0",
     "jsprim": "^1.4.1",
     "lazy-ass": "^1.6.0",
-    "listr2": "^3.10.0",
+    "listr2": "^3.11.0",
     "lodash": "^4.17.21",
     "lodash.once": "^4.1.1",
     "log-symbols": "^4.1.0",
@@ -167,16 +167,13 @@
     "yauzl": "^2.10.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress": "cypress open"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/coolqatester/alltrails-automation.git"
   },
-  "keywords": [
-    "e2e",
-    "automation"
-  ],
   "author": "Pramod Gundimeda",
   "license": "ISC",
   "bugs": {
