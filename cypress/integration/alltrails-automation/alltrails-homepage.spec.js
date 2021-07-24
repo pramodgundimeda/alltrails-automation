@@ -28,7 +28,7 @@ describe('I login with the test user credentials', () => {
 )
 
 describe('I search for the city plano', () => {
-        it('test one', () => {
+        it('should be redirected to the page with list of trails in Plano', () => {
             cy.visit('https://www.alltrails.com')
             cy.contains('Find your next trail')
             cy.get('input[data-test-id="algoliaPlaceholderText"]').click().type('Plano')
@@ -50,8 +50,6 @@ describe('I buy pro features of All Trails account', () => {
         cy.get('input[name="cc-exp-year"]').click.type('24')
         cy.get('input[name="cvv"]').click.type('123')
         cy.get('input[data-test-id="formButton-submit"]').click
-        //After this assuming the user will be navigated to the home page
-
         }
     )
     }
